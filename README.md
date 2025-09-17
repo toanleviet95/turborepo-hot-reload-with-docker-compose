@@ -2,7 +2,7 @@
 
 This is a community-maintained example. If you experience a problem, please submit a pull request with a fix. GitHub Issues will be closed.
 
-## Using this example
+## How to run
 
 ```
 Added nginx-proxy service for domain routing
