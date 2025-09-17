@@ -1,13 +1,24 @@
-# `Turborepo` Vite starter
+# `Turborepo` Vite starter + hot reload with docker compose
 
 This is a community-maintained example. If you experience a problem, please submit a pull request with a fix. GitHub Issues will be closed.
 
 ## Using this example
 
+```
+Added nginx-proxy service for domain routing
+Added VIRTUAL_HOST and VIRTUAL_PORT environment variables
+Created a new network for nginx-proxy
+Connected the web service to both networks
+```
+
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-vite-react
+docker-compose up --build
+```
+
+```sh
+sudo echo "127.0.0.1 my-domain.local" >> /etc/hosts
 ```
 
 ## What's inside?
